@@ -11,7 +11,7 @@ import {
   Legend,
 } from "chart.js";
 
-import { Bar,Doughnut } from "react-chartjs-2";
+import { Bar, Doughnut } from "react-chartjs-2";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -23,12 +23,7 @@ ChartJS.register(
 
 export const BarChart = () => {
   const [data, setData] = useState({
-    labels: [
-      "Week 1",
-      "Week 2",
-      "Week 3",
-      "Week 4",
-    ],
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
     datasets: [
       {
         label: "Minimum Temp",
@@ -37,7 +32,7 @@ export const BarChart = () => {
         backgroundColor: "rgba(152, 216, 158, 1)",
         borderWidth: 1,
         borderRadius: 2,
-        barThickness: 15, 
+        barThickness: 15,
         barPercentage: 25,
       },
       {
@@ -47,7 +42,7 @@ export const BarChart = () => {
         backgroundColor: "rgba(238, 132, 132, 1)",
         borderWidth: 1,
         borderRadius: 2,
-        barThickness: 15, 
+        barThickness: 15,
         barPercentage: 25,
       },
     ],
@@ -77,8 +72,8 @@ export const BarChart = () => {
       legend: {
         display: true,
         position: "top",
-        align: 'end',
-        anchor: 'end',
+        align: "end",
+        anchor: "end",
         labels: {
           usePointStyle: true,
           pointRadius: 1,
@@ -95,7 +90,7 @@ export const BarChart = () => {
         data: [],
         borderColor: "rgba(255,255,255, 0.2)",
         backgroundColor: "rgba(152, 216, 158, 1)",
-        barThickness: 10, 
+        barThickness: 10,
         barPercentage: 5,
         borderWidth: 1,
         borderRadius: 10,
@@ -112,14 +107,13 @@ export const BarChart = () => {
       },
     ],
   };
-  
-  
+
   useEffect(() => {
     // Simulate data for 4 weeks
     const simulateDataForWeeks = () => {
       const minTemps = [20, 22, 18, 25]; // Simulated minimum temperatures for each week
       const maxTemps = [30, 32, 28, 35]; // Simulated maximum temperatures for each week
-  
+
       setData({
         labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
         datasets: [
@@ -138,14 +132,13 @@ export const BarChart = () => {
         ],
       });
     };
-  
+
     simulateDataForWeeks();
   }, []);
-  
 
   return (
     <div className="bargraph" style={{ width: "100%", maxWidth: "none" }}>
-      <Bar data={data} options={options}></Bar>
+      <Bar data={data} options={options} key="bar-chart"></Bar>
     </div>
   );
 };

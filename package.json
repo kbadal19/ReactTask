@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@canvasjs/react-charts": "^1.0.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.5",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.5",
     "bootstrap-icons": "^1.11.3",
+    "canvasjs": "^1.8.3",
     "chart.js": "^4.4.1",
     "firebase": "^10.7.2",
     "prop-types": "^15.8.1",
