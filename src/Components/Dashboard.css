@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.dashPage {
+  display: flex;
+  height: 100vh;
+  background: #f8faff;
+  overflow-y: auto;
+  width: 100%;
+}
+
+
+.sideCard {
+  background-color: #f8faff;
+  padding: 2vw;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.overlaySide {
+  background: linear-gradient(180deg, #4285f4 0%, #286de0 100%);
+  padding: 1vw;
+  width: 80%;
+  height: 100%;
+  border-radius: 2vw;
+}
+
+.rtCards {
+  flex-grow: 1;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #f8faff;
+  padding: 2vw;
+  margin-bottom: 2vw;
+  border-radius: 1vw;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topCards,
+.bottomCards {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -3vw;
+  margin-top: -2vw;
+  flex-wrap: wrap;
+  gap: 0.75vw;
+}
+
+.topCards > *,
+.bottomCards > * {
+  flex-grow: 1;
+}
+
+.card1a,
+.card1b,
+.card1c,
+.card1d {
+  background-color: #ffffff;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  flex: 0 0 calc((20% - 1vw));
+  margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .card1a,
+  .card1b,
+  .card1c,
+  .card1d {
+    flex: 0 0 calc((40% - 1vw));
+  }
+}
+
+.card2 {
+  background-color: #ffffff;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  flex: 0 0 calc((20% - 1vw));
+  margin-bottom: 2vw;
+  width: 30vw;
+}
+
+@media screen and (max-width: 768px) {
+  .card2 {
+    flex: 0 0 calc((40% - 1vw));
+  }
+}
+
+.card2 button {
+  background-color: #4285f4;
+  color: #ffffff;
+  padding: 1vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.card2 button:hover {
+  background-color: #0056b3;
+}
+
+.midCard {
+  background-color: #ffffff;
+  padding: 0;
+  margin-bottom: 4%;
+  border-radius: 1vw;
+  margin-left: -2.5vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  height: 45vh;
+  width:76vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .midCard {
+    min-height: 20vw;
+  }
+}
+
+
+.topWord {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 2.63vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2.5vw;
+}
+
+.otherComponents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2vw;
+  height: 80%;
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+  color: #fff;
+  font-size: 1.05vw;
+}
+
+.dash svg {
+  margin-right: 1vw;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.dashName {
+  width: 20%;
+  margin-left: -7vw;
+  font-size: 2vw;
+  font-weight: bolder;
+  margin-right: 10vw;
+}
+
+.searchBar {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-left: 35%;
+  background-color: #fff;
+  height: 3vw;
+  border-radius: 2vw;
+}
+
+.searchIcon {
+  width: 2vw;
+  margin-left: 10%;
+  margin-right: 2vw;
+}
+
+.searchtext {
+  flex: 1;
+  margin-right: 20%;
+  margin-left: 1vw;
+}
+
+.notifyIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+
+.notifyIcon svg {
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .notifyIcon svg {
+    width: 0.75em;
+    height: 0.75em;
+  }
+}
+
+.sideBottom {
+  color: #fff;
+  font-size: 0.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3vw;
+  margin-bottom: 1vw;
+}
+
+.lowcontain {
+  margin-top: 20vw;
+  margin-left: -3vw;
+  margin-bottom: 2vw;
+}
+
+.picture {
+  height: 3vw;
+  width: 3vw;
+  background-color: #ced1d8;
+  border-radius: 50%;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture img {
+  height: 2.8vw;
+  width: 2.8vw;
+  border-radius: 50%;
+}
+
+
+.revLogo1 {
+  height: 2.25vw;
+  width: 2.25vw;
+  border-radius: 50%;
+  background-color: #7fcd93;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -1vw;
+}
+
+.revLogo2 {
+  height: 2.25vw;
+  width: 2.25vw;
+  border-radius: 50%;
+  background-color: #debf85;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -1vw;
+}
+
+.revLogo3 {
+  height: 2.25vw;
+  width: 2.25vw;
+  border-radius: 50%;
+  background-color: #eca4a4;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -1vw;
+}
+
+.revLogo4 {
+  height: 2.25vw;
+  width: 2.25vw;
+  border-radius: 50%;
+  background-color: #a9b0e5;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -1vw;
+}
+
+.rev {
+  font-weight: 0.5vw;
+  margin-top: 0.5vw;
+  display: flex;
+  align-items: flex-start;
+}
+
+.addcircle {
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.plus svg{
+  margin-top: 3.3vw;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.addprofile {
+  width: 10vw;
+  margin-top: 2vw;
+}
+
+.parenttop {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.numbers {
+  font-size: medium;
+  margin-bottom: -1.5vw;
+  font-weight: bold;
+  font-size: x-large;
+  margin-right: 1vw;
+}
+
+.rectc {
+  width: 4vw;
+  height: 1.5vw;
+  background-color: #e9f9eb;
+  border-radius: 2vw;
+  margin-right: -1vw;
+  margin-bottom: -1.5vw;
+  color: #3cc952;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.numberss {
+  font-size: medium;
+  margin-bottom: -1.5vw;
+  font-weight: bold;
+  font-size: x-large;
+  margin-right: 1vw;
+}
+
+.rectcc {
+  width: 4vw;
+  height: 1.5vw;
+  background-color: #e9f9eb;
+  border-radius: 2vw;
+  margin-right: -1vw;
+  margin-left: 4.2vw;
+  margin-bottom: -1.5vw;
+  color: #3cc952;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.bargraph {
+  width: 110%;
+  height: 70%;
+}
+
+.iconx1 {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #e9f9eb;
+}
+
+.iconx2 {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #ebe6f9;
+}
+
+.iconx3 {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #ffe9ec;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: -2vw;
+  margin-right: 2vw;
+}
+
+.iconx4 {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #ffe9ec;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: -2vw;
+  margin-right: 2vw;
+}
+
+.topcomp{
+  display: flex;
+  align-items:flex-start;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.profilename{
+  font-weight: 600;
+  font-size: 2vw;
+  color: #000;
+}
+
+.comps {
+  display: flex;
+}
+
+.leftcomp,
+.rightcomp {
+  flex: 1;
+  padding: 10px;
+}
+
+.profilephone,
+.profileemail,
+.profileinsta,
+.profileyoutube {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.iconx1,
+.iconx2,
+.iconx3,
+.iconx4 {
+  margin-right: 2px; 
+}
+
+.activityparent{
+  display: block;
+  align-items: flex-start;
+  justify-content: center;
+}
+.activities {
+  margin-top: 1vw;
+  margin-left: 2vw;
+  width: 70vw; 
+}
+
+
+.duration{
+  margin-top: 2vw;
+  margin-left: 3vw;
+}
+
+.bargraph canvas {
+  width: 80% !important;
+  height: 100% !important;
+  margin-left: 2vw;
+  margin-bottom: -4vw;
+}
+
+.card2b {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 10vw;
+  height:20vw;
+  margin: 1rem;
+}
+
+.card2a{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 20vw;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
